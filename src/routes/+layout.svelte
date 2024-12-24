@@ -1,4 +1,5 @@
 <script>
+	import '../app.css';
 	import '$src/app.css';
 	import * as config from '$src/app.config';
 	import { page } from '$app/stores';
@@ -26,13 +27,13 @@
 	<meta name="robots" content="index, follow" />
 	<link rel="canonical" href={canonicalUrl} />
 
-    <!-- Favicon and App Icons (https://realfavicongenerator.net) -->
-    <link rel="icon" type="image/png" href="/images/favicons/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/images/favicons/favicon.svg" />
-    <link rel="shortcut icon" href="/images/favicons/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png" />
-	
-    <!-- Progressive Web App (PWA) -->
+	<!-- Favicon and App Icons (https://realfavicongenerator.net) -->
+	<link rel="icon" type="image/png" href="/images/favicons/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="/images/favicons/favicon.svg" />
+	<link rel="shortcut icon" href="/images/favicons/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png" />
+
+	<!-- Progressive Web App (PWA) -->
 	<meta name="mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-title" content={config.siteName} />
@@ -41,7 +42,7 @@
 	<link rel="manifest" href="/site.webmanifest" />
 	<meta name="theme-color" content={config.pwaThemeColor} />
 	<meta name="msapplication-TileColor" content={config.pwaThemeColor} />
-    
+
 	<!-- Fonts -->
 	<!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" />

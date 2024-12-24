@@ -1,139 +1,95 @@
-<script>
-	import * as config from '$src/app.config';
-	import DarkModeToggle from '$lib/components/DarkModeToggle';
-
-	// icon svgs
-	import XTwitter from '$lib/icons/XTwitter';
-	import Github from '$lib/icons/Github';
-	import Dribbble from '$lib/icons/Dribbble';
-	import Codepen from '$lib/icons/Codepen';
-	import BadgeCheck from '$lib/icons/BadgeCheck';
-
-	// work/project list svgs
-	import Weak from '$lib/icons/Weak';
-    import Astronaut from '$lib/icons/Astronaut';
-	import ChatTMS from '$lib/icons/ChatTMS';
-	import Death from '$lib/icons/Death';
-	import ShortEdits from '$lib/icons/Shortedits';
-	import ItBetterInThailand from '$lib/icons/ItBetterInThailand';
-</script>
-
 <svelte:head>
-	<title>{config.siteName}</title>
-	<meta name="description" content={config.siteDescription} />
+    <title>@loopsvariables</title>
+    <meta name="description" content="In 2003 I figured out I could get paid to build stuff on the www. Thanks Tim!" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://loopsandvariables.com" />
+    
+    <!-- Mobile App Meta Tags -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="@loopsvariables" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="theme-color" content="#000000" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://loopsandvariables.com" />
+    <meta property="og:title" content="@loopsvariables" />
+    <meta property="og:description" content="In 2003 I figured out I could get paid to build stuff on the www. Thanks Tim!" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/loopsandvariables/x-themed-profile/refs/heads/main/static/images/desktop-mobile-mockup.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://loopsandvariables.com" />
+    <meta name="twitter:title" content="@loopsvariables" />
+    <meta name="twitter:description" content="In 2003 I figured out I could get paid to build stuff on the www. Thanks Tim!" />
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/loopsandvariables/x-themed-profile/refs/heads/main/static/images/desktop-mobile-mockup.png" />
+    <meta name="twitter:creator" content="loopsvariables" />
 </svelte:head>
 
 <div class="w-full m-auto max-w-[1400px]">
-	<div class="grid grid-cols-12 mx-auto lg:gap-16 xl:gap-20 2xl:gap-24">
-		<div class="top-0 flex flex-col col-span-12 gap-6 p-6 overflow-y-auto lg:h-screen lg:sticky lg:col-span-6 xl:col-span-5 md:gap-8 lg:gap-10 xl:gap-12 2xl:gap-14 md:p-12 lg:p-16 xl:p-20 2xl:p-24 lg:pr-0 xl:pr-0 2xl:pr-0">
-			<div class="flex flex-col items-center md:flex-row">
-				<a class="flex flex-col items-center justify-center gap-3 pt-5 text-center md:pt-0 md:justify-start md:text-left md:flex-row md:gap-5 lg:gap-4 xl:gap-6" href="https://x.com/intent/follow?screen_name=loopsvariables" target="_blank">
-					<!-- <Logo /> -->
-					<img src="/images/profile.jpg" alt="Henry" class="w-20 h-20 rounded-full md:w-16 md:h-16" />
-					<div class="flex flex-col items-center justify-center text-xl md:items-start md:justify-start md:text-xl xl:text-xl">
-						<span class="flex items-center gap-[0.3em] font-extrabold">Henry <BadgeCheck class="text-[#4a99e9] w-[1em] h-[1em]" /></span>
-						<span class="font-medium opacity-60">@loopsvariables</span>
-					</div>
-				</a>
-				<div class="flex items-center gap-5 mt-6 md:mt-0 xl:gap-6 md:ml-auto">
-					<div class="absolute top-10 right-10 md:top-0 md:right-0 md:relative opacity-40 hover:opacity-100">
-						<DarkModeToggle className="w-6 h-6" />
-					</div>
-					<a class="text-lg xl:text-xl font-bold rounded-full bg-dark dark:bg-light hover:opacity-80 px-[1em] py-[0.5em] text-light dark:text-dark" href="https://x.com/intent/follow?screen_name=loopsvariables" target="_blank">Follow</a>
-				</div>
-			</div>
+    <div class="grid grid-cols-12 mx-auto lg:gap-16 xl:gap-20 2xl:gap-24">
+        <!-- Left Column -->
+        <div class="top-0 flex flex-col col-span-12 gap-6 p-6 overflow-y-auto lg:h-screen lg:sticky lg:col-span-6 xl:col-span-5 md:gap-8 lg:gap-10 xl:gap-12 2xl:gap-14 md:p-12 lg:p-16 xl:p-20 2xl:p-24 lg:pr-0 xl:pr-0 2xl:pr-0">
+            <div class="flex flex-col items-center md:flex-row">
+                <a class="flex flex-col items-center justify-center gap-3 pt-5 text-center md:pt-0 md:justify-start md:text-left md:flex-row md:gap-5 lg:gap-4 xl:gap-6" href="https://x.com/intent/follow?screen_name=loopsvariables" target="_blank">
+                    <img src="/images/profile.jpg" alt="Henry" class="w-20 h-20 rounded-full md:w-16 md:h-16" />
+                    <div class="flex flex-col items-center justify-center text-xl md:items-start md:justify-start md:text-xl xl:text-xl">
+                        <span class="flex items-center gap-[0.3em] font-extrabold">
+                            Henry 
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24" fill="currentColor" aria-label="BadgeCheck Icon" class="text-[#4a99e9] w-[1em] h-[1em]"><path d="M256 0c36.8 0 68.8 20.7 84.9 51.1C373.8 41 411 49 437 75s34 63.3 23.9 96.1C491.3 187.2 512 219.2 512 256s-20.7 68.8-51.1 84.9C471 373.8 463 411 437 437s-63.3 34-96.1 23.9C324.8 491.3 292.8 512 256 512s-68.8-20.7-84.9-51.1C138.2 471 101 463 75 437s-34-63.3-23.9-96.1C20.7 324.8 0 292.8 0 256s20.7-68.8 51.1-84.9C41 138.2 49 101 75 75s63.3-34 96.1-23.9C187.2 20.7 219.2 0 256 0zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"/></svg>
+                        </span>
+                        <span class="font-medium opacity-60">@loopsvariables</span>
+                    </div>
+                </a>
+                <div class="flex items-center gap-5 mt-6 md:mt-0 xl:gap-6 md:ml-auto">
+                    <div class="absolute top-10 right-10 md:top-0 md:right-0 md:relative opacity-40 hover:opacity-100">
+                        <button class="block" aria-label="Toggle dark mode" on:click={toggleDarkMode}>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="24" height="24" fill="currentColor" aria-label="Moon Icon" class="w-6 h-6"><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/></svg>
+                        </button>
+                    </div>
+                    <a class="text-lg xl:text-xl font-bold rounded-full bg-dark dark:bg-light hover:opacity-80 px-[1em] py-[0.5em] text-light dark:text-dark" href="https://x.com/intent/follow?screen_name=loopsvariables" target="_blank">Follow</a>
+                </div>
+            </div>
 
-			<div class="px-5 text-xl text-center md:text-left md:text-2xl lg:text-2xl xl:text-2xl md:px-0">
-				<p class="">
-					I created this template for my personal page. It's simple, responsive, and kinda looks like X? Get it from <a href="https://github.com/loopsandvariables/x-themed-profile" class="underline" target="_blank">GitHub</a>. My
-					<a href="https://loopsandvariables.com" class="underline" target="_blank">original page</a> is here.
-				</p>
-				<p class="mt-[1em]"><a href="https://loopsandvariables.com/updates" class="underline">Join my email list</a> for product updates and free stuff I make for other solo builders.</p>
-			</div>
+            <!-- Bio Text -->
+            <div class="px-5 text-xl text-center md:text-left md:text-2xl lg:text-2xl xl:text-2xl md:px-0">
+                <p>I created this template for my personal page. It's simple, responsive, and kinda looks like X? Get it from <a href="https://github.com/loopsandvariables/x-themed-profile" class="underline" target="_blank">GitHub</a>. My
+                    <a href="https://loopsandvariables.com" class="underline" target="_blank">original page</a> is here.
+                </p>
+                <p class="mt-[1em]"><a href="/updates" class="underline">Join my email list</a> for product updates and free stuff I make for other solo builders.</p>
+            </div>
 
-			<div class="flex items-center justify-center gap-10 py-6 mt-auto lg:py-0 md:justify-start">
-				<a class="p-2 -m-2 opacity-100 hover:opacity-60" href="https://x.com/intent/follow?screen_name=loopsvariables" target="_blank">
-					<XTwitter class="w-8 h-8" />
-				</a>
-				<a class="p-2 -m-2 opacity-100 hover:opacity-60" href="https://dribbble.com/henry" target="_blank">
-					<Dribbble class="w-8 h-8" />
-				</a>
-				<a class="p-2 -m-2 opacity-100 hover:opacity-60" href="https://github.com/loopsandvariables" target="_blank">
-					<Github class="w-8 h-8" />
-				</a>
-				<a class="p-2 -m-2 opacity-100 hover:opacity-60" href="https://codepen.io/loopsandvariables" target="_blank">
-					<Codepen class="w-8 h-8" />
-				</a>
-			</div>
-		</div>
-		<div class="col-span-12 p-6 -mt-6 lg:col-span-6 xl:col-span-7 md:p-12 lg:p-16 xl:p-20 2xl:p-24 lg:pl-0 xl:pl-0 2xl:pl-0 md:-mt-12 lg:mt-0">
-			<div class="flex flex-col gap-6 text-base md:text-xl md:gap-6 lg:gap-7 xl:gap-8">
+            <!-- Social Links -->
+            <div class="flex items-center justify-center gap-10 py-6 mt-auto lg:py-0 md:justify-start">
+                <!-- Social icons (Twitter, Dribbble, GitHub, CodePen) -->
+                <a class="p-2 -m-2 opacity-100 hover:opacity-60" 
+                   href="https://x.com/intent/follow?screen_name=loopsvariables" 
+                   target="_blank"
+                   aria-label="Follow on X (formerly Twitter)">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24" fill="currentColor" aria-label="XTwitter Icon" class="w-8 h-8"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+                </a>
+                <!-- Add other social icons here -->
+            </div>
+        </div>
 
-				<a class="rounded-[20px] md:rounded-[25px] p-5 md:p-6 bg-dark/5 hover:bg-dark/10 dark:bg-light/5 dark:hover:bg-light/10 flex items-center gap-[1.5em]" href="https://iwasweak.com" target="_blank">
-					<div class="w-[80px] md:w-[90px] md:h-[90px] md:rounded-[18px] h-[80px] rounded-[15px] shrink-0 flex items-center justify-center bg-light dark:bg-dark">
-						<Weak />
-					</div>
-					<div class="flex flex-col">
-						<h2 class="font-bold">Weak</h2>
-						<p class="opacity-50 font-medium mt-[0.1em]">We've all become so weak. We need no bullshit self improvement tools.</p>
-					</div>
-				</a>
-
-                <a class="rounded-[20px] md:rounded-[25px] p-5 md:p-6 bg-dark/5 hover:bg-dark/10 dark:bg-light/5 dark:hover:bg-light/10 flex items-center gap-[1.5em]" href="https://astronaut.build" target="_blank">
-					<div class="w-[80px] md:w-[90px] md:h-[90px] md:rounded-[18px] h-[80px] rounded-[15px] shrink-0 flex items-center justify-center bg-light dark:bg-dark">
-						<Astronaut />
-					</div>
-					<div class="flex flex-col">
-						<h2 class="font-bold">Astronaut</h2>
-						<p class="opacity-50 font-medium mt-[0.1em]">Build and launch your app with Astronaut, a production ready SvelteKit boilerplate.</p>
-					</div>
-				</a>
-
-				<a class="rounded-[20px] md:rounded-[25px] p-5 md:p-6 bg-dark/5 hover:bg-dark/10 dark:bg-light/5 dark:hover:bg-light/10 flex items-center gap-[1.5em]" href="https:/chattms.ai" target="_blank">
-					<div class="w-[80px] md:w-[90px] md:h-[90px] md:rounded-[18px] h-[80px] rounded-[15px] shrink-0 flex items-center justify-center bg-light dark:bg-dark">
-						<ChatTMS />
-					</div>
-					<div class="flex flex-col">
-						<h2 class="font-bold">ChatTMS</h2>
-						<p class="opacity-50 font-medium mt-[0.1em]">AI powered assistant for your TMS practice. Trained weekly with research, protocols, and more.</p>
-					</div>
-				</a>
-
-				<a class="rounded-[20px] md:rounded-[25px] p-5 md:p-6 bg-dark/5 hover:bg-dark/10 dark:bg-light/5 dark:hover:bg-light/10 flex items-center gap-[1.5em]" href="https://death.iwasweak.com" target="_blank">
-					<div class="w-[80px] md:w-[90px] md:h-[90px] md:rounded-[18px] h-[80px] rounded-[15px] shrink-0 flex items-center justify-center bg-light dark:bg-dark">
-						<Death />
-					</div>
-					<div class="flex flex-col">
-						<h2 class="font-bold">Death</h2>
-						<p class="opacity-50 font-medium mt-[0.1em]">Turns out I only have 2,000 weeks left. I'm trying to make them count.</p>
-					</div>
-				</a>
-
-				<a class="rounded-[20px] md:rounded-[25px] p-5 md:p-6 bg-dark/5 hover:bg-dark/10 dark:bg-light/5 dark:hover:bg-light/10 flex items-center gap-[1.5em]" href="https://shortedits.com" target="_blank">
-					<div class="w-[80px] md:w-[90px] md:h-[90px] md:rounded-[18px] h-[80px] rounded-[15px] shrink-0 flex items-center justify-center bg-light dark:bg-dark">
-						<ShortEdits />
-					</div>
-					<div class="flex flex-col">
-						<h2 class="font-bold">Short Edits</h2>
-						<p class="opacity-50 font-medium mt-[0.1em]">Productized video editing service. Get your videos edited like clockwork.</p>
-					</div>
-				</a>
-
-				<a class="rounded-[20px] md:rounded-[25px] p-5 md:p-6 bg-dark/5 hover:bg-dark/10 dark:bg-light/5 dark:hover:bg-light/10 flex items-center gap-[1.5em]" href="https://itsbetterinthailand.com" target="_blank">
-					<div class="w-[80px] md:w-[90px] md:h-[90px] md:rounded-[18px] h-[80px] rounded-[15px] shrink-0 flex items-center justify-center bg-light dark:bg-dark">
-						<ItBetterInThailand />
-					</div>
-					<div class="flex flex-col">
-						<h2 class="font-bold">It's better in Thailand</h2>
-						<p class="opacity-50 font-medium mt-[0.1em]">A project I started in 2015. I had a crazy idea to travel to every province in Thailand.</p>
-					</div>
-				</a>
-
-				<div class="opacity-50 flex flex-col items-center justify-center w-full gap-[1em] text-center p-6 md:p-8 lg:p-10 xl:p-12 2xl:p-14">
-					<span class="text-3xl font-medium">¯\_(ツ)_/¯</span>
-					<p class="font-medium">I guess I should ship more.</p>
-				</div>
-			</div>
-		</div>
-	</div>
+        <!-- Right Column -->
+        <div class="col-span-12 p-6 -mt-6 lg:col-span-6 xl:col-span-7 md:p-12 lg:p-16 xl:p-20 2xl:p-24 lg:pl-0 xl:pl-0 2xl:pl-0 md:-mt-12 lg:mt-0">
+            <div class="flex flex-col gap-6 text-base md:text-xl md:gap-6 lg:gap-7 xl:gap-8">
+                <!-- Project Cards -->
+                <!-- Add your project cards here following the same pattern -->
+            </div>
+        </div>
+    </div>
 </div>
+
+<style>
+    /* Add any custom styles here if needed */
+    :global(html) {
+        @apply antialiased;
+    }
+    
+    :global(body) {
+        @apply font-sans text-base antialiased bg-light dark:bg-dark text-dark dark:text-light selection:bg-dark selection:text-light dark:selection:bg-light dark:selection:text-dark;
+    }
+</style>
