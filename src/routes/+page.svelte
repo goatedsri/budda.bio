@@ -43,7 +43,7 @@
                     </div>
                 </a>
                 <div class="flex items-center gap-5 mt-6 md:mt-0 xl:gap-6 md:ml-auto">
-                    <a class="text-lg xl:text-xl font-bold rounded-full bg-dark dark:bg-light hover:opacity-80 px-[1em] py-[0.5em] text-light dark:text-dark" href="https://x.com/intent/follow?screen_name=okbudda" target="_blank">Follow</a>
+                    <a class="text-lg xl:text-xl font-bold rounded-full bg-[#101113]/5 hover:bg-[#101113]/10 px-[1em] py-[0.5em] text-white" href="https://x.com/intent/follow?screen_name=okbudda" target="_blank">Follow</a>
                 </div>
             </div>
 
@@ -79,12 +79,11 @@
 </div>
 
 <style lang="postcss">
-    /* Add any custom styles here if needed */
     :global(html) {
         @apply antialiased;
     }
     
     :global(body) {
-        @apply font-sans text-base antialiased bg-light dark:bg-dark text-dark dark:text-light selection:bg-dark selection:text-light dark:selection:bg-light dark:selection:text-dark;
+        @apply font-sans text-base antialiased bg-white text-[#101113] selection:bg-[#101113] selection:text-white;
     }
 </style>
